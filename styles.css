@@ -1,0 +1,115 @@
+body {   
+    font-size: 20;
+}
+/* element / tag selectors*/
+/* a = anchor tag
+
+https://www.w3schools.com/cssref/css_selectors.php
+*/
+
+a {
+    font-size: large;
+    color: bisque;
+}
+
+/* 
+# is looking for 'id'
+. is looking for class 
+*/
+
+
+/* #main-header {
+    color: darkred;
+} */
+
+.square-list {
+   list-style: none; /* remove default list styles */
+   padding: 0;
+}
+
+.square-list li {
+    width: 100px; /* set the width of each square */
+    height: 100px; /* set the height of each square */
+    background-color: #5c5192; /* set the background colour */
+    margin: 10px; /* add spacing between the squares */
+    display: inline-block; /* display squares horizontally */
+    text-align: center; /* center text horizontally */
+    line-height: 100px; /* center text vertically */
+
+}
+
+/* image does not need a . or a # */
+img {
+    
+    width: 460px;
+
+    /* 
+    border-width: 4px;
+    border-style: solid;
+    border-color: black;
+    */
+
+/*  shorthand way: */
+
+border: solid black 3px;
+/* space between the content and the border */
+padding: 10px;
+box-sizing 
+}
+
+/* div is a container, or 'parent'. 
+item is a child
+
+you can target a particular div by giving it a class (with a dot) or id (with a hash). Class is with a dot. 
+id is used for one item. class is used for multiple items
+
+*/
+
+/* this is a id: */
+#headercontainer {
+    border: solid blue 3px;
+}
+
+/* this is a class */
+.imagecontainer {
+    width: 80%;
+
+}
+
+/* 
+class override tag selecters 
+id override class
+
+tag selector is at the bottom
+class overrides tag
+id over
+
+id>class>tag
+
+*/
+
+
+#navbarContainer { 
+    border: blue solid 5px;
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+}
+
+#navbarContainer > nav {
+    border: red solid 5px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbarContainer > nav > a {
+    border: black solid 2px;
+} 
+
+.square-list {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    border: blue solid 5px;
+}
